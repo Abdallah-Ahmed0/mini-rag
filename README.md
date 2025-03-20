@@ -18,3 +18,16 @@ $ conda create -n mini-rag pyhton=3.8
 $ conda activate mini-rag
 ```
  
+## Installation
+
+### Install the required packages
+
+```bash
+$ pip install -r requirements.txt
+```
+### Setup the environment variables
+
+```bash
+$ cp .env.example .env
+```
+Set your environment variables in the `.env` file. Like `OPEN_API_KEY` value.
