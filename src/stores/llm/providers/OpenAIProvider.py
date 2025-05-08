@@ -39,8 +39,8 @@ class OpenAIProvider(LLMinterface):
         return text[:self.default_input_max_characters].strip()
     
     def generate_text(self, prompt: str, chat_history: list=[], max_output_tokens: int=None, 
-                      temperature: float = None):
-        
+                      temperature: float = None):   
+     
         if not self.client:
             self.logger.error("OpenAI client was not set!!")
             return None
